@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train System</title>
+</head>
+<style>
+body {
+    background: linear-gradient(to right, #e0c3fc, #8ec5fc); 
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+
+form {
+    background-color: #f5f2f2; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #f6f2f2; 
+    width: 400px;
+}
+
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 18px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4caf50; 
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+#trainSchedule {
+    margin-top: 20px;
+}
+
+
+ 
+</style>
+<body>
+    <form >
+        <label for="tname">TrainName:</label><br>
+        <input type="text" id="tname" name="tname"><br>
+        <label for="Arrival">ArrivalTime:</label><br>
+        <input type="time" id="Arrival" name="Arrival"><br>
+        <label for="Departure">DepartureTime:</label><br>
+        <input type="time" id="Departure" name="Departure"><br>
+        <button type="button" onclick="addTrain()">Add Train</button>
+
+        </form>
+        <h3>Current Train Schedule:</h3>
+        <div id="trainSchedule"></div>
+        <script src="train.js"></script>
+
+       
+    
+</body>
+</html>
